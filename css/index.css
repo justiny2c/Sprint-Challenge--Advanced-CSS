@@ -188,19 +188,23 @@ nav {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  height: 10%;
+  height: 14%;
   background-color: #F6F6F6;
   padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
 }
 nav .space-title h1 {
   color: #454A59;
-  padding: 20px;
+  padding: 12px;
 }
 nav .nav-links a {
   -webkit-animation: rainbow 10s infinite;
   justify-content: space-around;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding: 10px 15px;
 }
 @-webkit-keyframes rainbow {
@@ -255,7 +259,9 @@ footer {
   padding: 0 15px;
 }
 .home .intro img {
+  padding-top: 10%;
   border-radius: 8px;
+  height: 100%;
 }
 .home .space-images {
   display: flex;
