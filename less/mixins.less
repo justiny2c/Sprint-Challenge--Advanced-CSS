@@ -1,7 +1,8 @@
 // Mixins Here
 
 button {
-    background-color: @btn-bg-color;
+    // background-color: @btn-bg-color;
+    .button-color(@btn-bg-color);
     color: white;
     border-radius: 7px;
     padding: 10px 15px;
@@ -18,14 +19,20 @@ button:hover {
 
 .btn {
     @media @mobile {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    .basic-layout(flex, center);
     }
 }
 
-// .basic-layout (@flex, @justify){
-// 	display: @flex;
-// 	justify-content: @justify;
-// }
-// // usage
-// .basic-layout(flex, center);
+
+// PARAMETRIC MIXIN
+
+.basic-layout (@flex, @justify){
+	display: @flex;
+    justify-content: @justify;
+}
+
+.button-color(@bgc) {
+    background-color: @bgc;
+}
