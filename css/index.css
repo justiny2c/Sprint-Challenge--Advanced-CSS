@@ -3,6 +3,11 @@ button {
   color: white;
   border-radius: 5px;
   padding: 10px 15px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+button:hover {
+  background-color: #297bbe;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
