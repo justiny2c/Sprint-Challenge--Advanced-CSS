@@ -1,1 +1,41 @@
 // Navigation code here
+
+nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    background-color: @wild-sand;
+    padding-bottom: 20px;
+
+    .space-title h1 {
+        color: @river-bend;
+        padding: 20px;
+    }
+    
+    
+    
+    .nav-links a {
+        -webkit-animation: rainbow 10s infinite;
+        justify-content: space-around;
+        text-decoration: none;
+        // color: @river-bend;
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
+}
+
+@-webkit-keyframes rainbow {
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+    30%{color: CadetBlue;}
+      40%{color: yellow;}
+    50%{color: coral;}
+      60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+      100%{color: orange;}
+  }
