@@ -1,1 +1,52 @@
 // Navigation code here
+
+nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 14%;
+    background-color: @nav-bg;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    // opacity: 0.5;
+
+    .space-title h1 {
+        color: @river-bend;
+        padding: 12px;
+    }
+    
+// .nav-links {
+//     @media @mobile {
+//         display: flex;
+//         flex-wrap: nowrap;
+//         width: 100%
+//     }
+// }
+
+    .nav-links a {
+        -webkit-animation: rainbow 10s infinite;
+        justify-content: space-around;
+        text-decoration: none;
+        // color: @river-bend;
+        font-size: 1.3em;
+        padding: 3%;
+    }
+}
+
+
+@-webkit-keyframes rainbow {
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+    30%{color: CadetBlue;}
+      40%{color: yellow;}
+    50%{color: coral;}
+      60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+      100%{color: orange;}
+  }

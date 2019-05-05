@@ -1,1 +1,39 @@
 // Mixins Here
+
+button {
+    // background-color: @btn-bg-color;
+    .button-color(@btn-bg-color);
+    color: white;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    @media @mobile {
+        width: 80%;
+        }
+}
+
+button:hover { 
+    background-color: @hover;
+  }
+
+  // div button
+.btn {
+    @media @mobile {
+    // display: flex;
+    // justify-content: center;
+    .basic-layout(flex, center);
+    }
+}
+
+
+// PARAMETRIC MIXIN
+
+.basic-layout (@flex, @justify){
+	display: @flex;
+    justify-content: @justify;
+}
+
+// .button-color(@bgc) {
+//     background-color: @bgc;
+// }
